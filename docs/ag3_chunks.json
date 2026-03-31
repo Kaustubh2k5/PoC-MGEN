@@ -1,0 +1,21 @@
+[
+  {
+    "name": "__overview__",
+    "signature": "import malariagen_data; ag3 = malariagen_data.Ag3()",
+    "description": "This page provides a curated list of functions and properties available in the malariagen_data API for data on mosquitoes from the Anopheles gambiae complex. To set up the API, use the following code: All the functions below can then be accessed as methods on the ag3 object. E.g., to call the sample_metadata() function, do: For more information about the data and terms of use, please see the MalariaGEN Anopheles gambiae genomic surveillance project home page.",
+    "parameters": [],
+    "example": "import malariagen_data ag3 = malariagen_data.Ag3()\ndf_samples = ag3.sample_metadata()",
+    "intent_keywords": [
+      "setup",
+      "install",
+      "import",
+      "initialise",
+      "initialize",
+      "ag3",
+      "overview",
+      "introduction",
+      "getting started"
+    ],
+    "source_url": "https://malariagen.github.io/malariagen-data-python/latest/Ag3.html"
+  }
+]
