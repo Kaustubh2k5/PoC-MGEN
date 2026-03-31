@@ -1,4 +1,4 @@
-# MalariaGEN NLQ — Local POC (Gemini + ChromaDB edition)
+# MalariaGEN NLI — Local POC (Gemini + ChromaDB edition)
 
 > Natural-language interface for the MalariaGEN `malariagen_data` Python API.
 
@@ -13,19 +13,19 @@ User query
 Off-topic guard (regex)
    │
    ▼
-ChromaDB semantic search  ←── Gemini text-embedding-004  (768-dim vectors)
+ChromaDB semantic search  <── Gemini text-embedding-004  (768-dim vectors)
    │                           OR local MiniLM-L6 fallback (no API needed)
    ▼
-Context (top-4 API doc chunks)
+Context (top-4 API doc chunks) 
    │
    ▼
-Gemini 2.0 Flash — Programmer
+Gemini 2.5 Flash — Programmer
    │
    ▼
 Sandboxed subprocess execution (optional)
    │
    ▼
-Gemini 2.0 Flash — Verifier  (separate call)
+Gemini 2.5 Flash — Verifier  (separate call)
    │
    ▼
 Blended confidence score → Frontend
@@ -75,8 +75,8 @@ Open **http://localhost:5000**
 | Layer | Model | Purpose |
 |-------|-------|---------|
 | Embeddings | `text-embedding-004` | Vectorise docs + queries |
-| Programmer | `gemini-2.0-flash` | NLQ → Python code |
-| Verifier | `gemini-2.0-flash` | Cross-check intent & logic |
+| Programmer | `gemini-2.5-flash` | NLQ → Python code |
+| Verifier | `gemini-2.5-flash` | Cross-check intent & logic |
 
 ---
 
